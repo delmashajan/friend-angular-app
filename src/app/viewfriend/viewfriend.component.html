@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row mt-4">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">NAME</th>
+                <th scope="col">FRIEND NAME</th>
+                <th scope="col">FRIEND NICKNAME</th>
+                <th scope="col">DESCRIBE YOUR FRIEND</th>
+                
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor = "let i of friend">
+                
+                <td>{{i._id}}</td>
+                <td>{{i.name}}</td>
+                <td>{{i.friendName}}</td>
+                <td>{{i.friendNickName}}</td>
+                <td>{{i.DescribeYourFriend}}</td>
+                <td>{{i.courseVenue}}</td>
+                
+              </tr>
+              
+            </tbody>
+          </table>
+    </div>
+</div>
